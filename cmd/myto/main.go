@@ -25,10 +25,6 @@ func main() {
 
 	flag.Parse()
 
-	if filepath == "" {
-		flag.CommandLine.Usage()
-		os.Exit(1)
-	}
 	myto := mytomake.NewMyto(dataDir)
 
 	if filepath == "" {
